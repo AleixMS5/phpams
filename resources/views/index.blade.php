@@ -8,6 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-<h1><?=$greeting;?></h1>
+<h1 style="color: blue"><?=$greeting;?></h1>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>completed</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>paco</td>
+        <td>pepe</td>
+        <td>pipo</td>
+    </tr>
+</table>
 </body>
 </html>
