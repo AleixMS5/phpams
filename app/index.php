@@ -13,7 +13,7 @@ try {
     echo 'error amb la bd';
 }
 
-$statement= $dbh->prepare('SELECT * FROM tasks;');
+$statement= $dbh->prepare('SELECT * FROM task;');
 $statement->execute();
 $tasks = $statement->fetchAll(PDO::FETCH_OBJ);
 var_dump($tasks);
