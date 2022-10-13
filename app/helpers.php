@@ -1,4 +1,4 @@
 <?php
 function greet(){
-return  "hola $_GET";
+return  "hola ams";
 }

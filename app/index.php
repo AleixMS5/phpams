@@ -1,7 +1,7 @@
 <?php
 require 'app/helpers.php';
 require 'app/Task.php';
-$task = new Task(1, "pan", "fariña", 0);
+$task = new Task(1);
 
 //VAR_DUMP($_GET[]);
 //$name='ams';
@@ -10,11 +10,20 @@ $pass = 'Xf5wnAVForkHYjWE';
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=phpams', $user, $pass);
 } catch (\Exception $ex) {
-    echo 'error amb la bd';
+    echo $ex;
 }
 
 $statement= $dbh->prepare('SELECT * FROM tasks;');
 $statement->execute();
-$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
 var_dump($tasks);
+
 $greeting = greet();
+
+
+
+
+
+
+
+

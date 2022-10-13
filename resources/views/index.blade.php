@@ -17,13 +17,17 @@
         <th>Description</th>
         <th>completed</th>
     </tr>
+    <?php foreach ($tasks as $task): ?>
 
     <tr>
-        <td>1</td>
-        <td>paco</td>
-        <td>pepe</td>
-        <td>pipo</td>
+        <td><?=$task->title; ?></td>
+    <td><?=$task->title; ?></td>
+    <td><?=$task->description; ?></td>
+    <td><?=$task->completed; ?></td>
     </tr>
+    <?php endforeach; ?>
+
+
 </table>
 </body>
 </html>
