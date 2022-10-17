@@ -1,21 +1,24 @@
 <?php
+require 'app/config.php';
 require 'app/helpers.php';
 require 'app/Task.php';
+
 $task = new Task(1);
 
 //VAR_DUMP($_GET[]);
 //$name='ams';
-$user = 'debian-sys-maint';
-$pass = 'Xf5wnAVForkHYjWE';
-try {
-    $dbh = new PDO('mysql:host=localhost;dbname=phpams', $user, $pass);
-} catch (\Exception $ex) {
-    echo $ex;
-}
+//
+//$user = 'debian-sys-maint';
+//$pass = 'Xf5wnAVForkHYjWE';
+//$dsn = 'mysql:host=localhost;dbname=phpams';
 
-$statement= $dbh->prepare('SELECT * FROM task;');
+
+$dbh=connectDB($config);
+
+
+$statement= $dbh->prepare('SELECT * FROM tasks;');
 $statement->execute();
-$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'task');
 var_dump($tasks);
 
 $greeting = greet();
