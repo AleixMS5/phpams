@@ -2,7 +2,7 @@
 $config = [
     'database' => [
 
-        'user' => 'debian-sys-maint',
+        'user' => 'phpforlaravel',
         'password' => 'Xf5wnAVForkHYjWE',
         'databasetype' => 'mysql',
         'host' => 'localhost',

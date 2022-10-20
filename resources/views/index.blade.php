@@ -20,7 +20,7 @@
     <?php foreach ($tasks as $task): ?>
 
     <tr>
-        <td><?=$task->title; ?></td>
+        <td><?=$task->id; ?></td>
     <td><?=$task->title; ?></td>
     <td><?=$task->description; ?></td>
     <td><?=$task->completed; ?></td>
