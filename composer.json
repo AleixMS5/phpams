@@ -1,0 +1,16 @@
+{
+    "name": "ams2003/phpmas",
+    "type": "project",
+    "autoload": {
+      "classmap": [
+          "./"
+      ]
+    },
+    "authors": [
+        {
+            "name": "alumne",
+            "email": "amontero@iesebre.com"
+        }
+    ],
+    "require": {}
+}
