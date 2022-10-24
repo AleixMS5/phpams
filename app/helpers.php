@@ -1,12 +1,18 @@
+
 <?php
+
+use app\Models\Task;
+
 function greet(){
-return  "hola ams";
+    return  "hola ams";
 
 }
-function connectDB($config){
 
-       return new PDO($config['database']['databasetype'].':host='.$config['database']['host'].';dbname='.$config['database']['name'],
-        $config['database']['user'],
-           $config['database']['password']);
+
+function fetchAllTasks($dbh){
+    $statement= $dbh->prepare('SELECT * FROM tasks;');
+    $statement->execute();
+    return $tasks = $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
 
 }
+gi
