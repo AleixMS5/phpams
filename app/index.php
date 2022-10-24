@@ -11,15 +11,8 @@ $task = new Task(1);
 //$user = 'debian-sys-maint';
 //$pass = 'Xf5wnAVForkHYjWE';
 //$dsn = 'mysql:host=localhost;dbname=phpams';
+$tasks = fetchAllTasks(connectDB($config));
 
-
-$dbh=connectDB($config);
-
-
-$statement= $dbh->prepare('SELECT * FROM tasks;');
-$statement->execute();
-$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'task');
-var_dump($tasks);
 
 $greeting = greet();
 

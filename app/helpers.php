@@ -12,3 +12,10 @@ function connectDB($config){
         echo $ex;
     }
 }
+
+function fetchAllTasks($dbh){
+    $statement= $dbh->prepare('SELECT * FROM tasks;');
+    $statement->execute();
+    return $tasks = $statement->fetchAll(PDO::FETCH_CLASS,'task');
+
+}
