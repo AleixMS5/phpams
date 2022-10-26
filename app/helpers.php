@@ -15,4 +15,3 @@ function fetchAllTasks($dbh){
     return $tasks = $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
 
 }
-gi
