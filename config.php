@@ -1,5 +1,5 @@
 <?php
-$config = [
+return [
     'database' => [
 
         'user' => 'phpforlaravel',

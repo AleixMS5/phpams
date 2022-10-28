@@ -12,5 +12,7 @@
             "email": "amontero@iesebre.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-pdo": "*"
+    }
 }

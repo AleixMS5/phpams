@@ -3,7 +3,7 @@
         'name' => 'ams2003/phpmas',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'ac39c5a7e61adfb3a2c62f7d8996c8916f3c3687',
+        'reference' => 'f34cf2a4f3df1b70eea465b16addf1d24536d6b7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ams2003/phpmas' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'ac39c5a7e61adfb3a2c62f7d8996c8916f3c3687',
+            'reference' => 'f34cf2a4f3df1b70eea465b16addf1d24536d6b7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
