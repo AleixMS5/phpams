@@ -1,9 +1,10 @@
+
 <?php
 
 
 
 function greet(){
-return  "hola ams";
+    return  "hola ams";
 
 }
 
