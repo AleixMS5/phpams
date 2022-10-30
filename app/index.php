@@ -6,7 +6,7 @@ use Framework\Database\Database;
 
 require 'config.php';
 
-require 'app/helpers.php';
+
 
 
 
