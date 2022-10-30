@@ -71,4 +71,5 @@ return array(
     'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     'app\\Models\\Task' => $baseDir . '/app/Models/Task.php',
     'framework\\App' => $baseDir . '/framework/App.php',
+    'framework\\Route' => $baseDir . '/framework/Route.php',
 );

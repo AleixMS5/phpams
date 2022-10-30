@@ -127,6 +127,7 @@ class ComposerStaticInitf6bb7fde37db42f6fb776a3e6211a790
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'app\\Models\\Task' => __DIR__ . '/../..' . '/app/Models/Task.php',
         'framework\\App' => __DIR__ . '/../..' . '/framework/App.php',
+        'framework\\Route' => __DIR__ . '/../..' . '/framework/Route.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
