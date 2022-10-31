@@ -4,7 +4,7 @@
 use Framework\App;
 use Framework\Database\Database;
 
-require 'config.php';
+require '../config.php';
 
 
 

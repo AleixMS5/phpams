@@ -20,11 +20,11 @@ class Route
     public function redirect($url)
     {
         if(!array_key_exists($url,$this->routes)){
-            require 'resources/views/errors/404.php';
+            require '../resources/views/errors/404.php';
             return $this;
         }
         if (!file_exists($this-> routes[$url])){
-            require 'resources/views/errors/404.php';
+            require '../resources/views/errors/404.php';
             return $this;
     }
        require $this-> routes[$url];
