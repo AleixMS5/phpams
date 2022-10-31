@@ -2,8 +2,8 @@
 
 use framework\App;
 
-require 'vendor/autoload.php';
-require 'framework/bootstrap.php';
+require '../vendor/autoload.php';
+require '../framework/bootstrap.php';
 //$routes=require 'routes.php';
 //$routes = new Router();
 //$routes->define($routes);
