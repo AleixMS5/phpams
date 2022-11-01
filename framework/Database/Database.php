@@ -3,6 +3,7 @@
 namespace Framework\Database;
 
 use app\Models\Task;
+
 use framework\App;
 use PDO;
 
@@ -26,6 +27,7 @@ protected $pdo;
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
+
 
     }
 

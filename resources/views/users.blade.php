@@ -5,17 +5,15 @@
 <table class="table">
     <tr>
         <th>Id</th>
-        <th>Title</th>
-        <th>Description</th>
-        <th>completed</th>
+        <th>Name</th>
+        <th>Email</th>
     </tr>
-    <?php foreach ($tasks as $task): ?>
+    <?php foreach ($users as $user): ?>
 
     <tr>
-        <td><?=$task->id; ?></td>
-    <td><?=$task->title; ?></td>
-    <td><?=$task->description; ?></td>
-    <td><?=$task->completed; ?></td>
+        <td><?=$user->id; ?></td>
+    <td><?=$user->name; ?></td>
+    <td><?=$user->email; ?></td>
     </tr>
     <?php endforeach; ?>
 

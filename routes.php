@@ -6,6 +6,7 @@ return[
     ''=> '../app/http/controllers/index.php',
 '/contact'=>'../app/http/controllers/contact.php',
 '/about'=>'../app/http/controllers/about.php',
-'/tasks'=>'../app/http/controllers/index.php'
+'/tasks'=>'../app/http/controllers/index.php',
+    '/users'=>'../app/http/controllers/users.php'
 ];
 
